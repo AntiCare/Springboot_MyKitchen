@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+  <link rel="stylesheet" href="../static/review.css">
+  <script defer src="../static/js/review.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav">
+      <div class="nav-items">
+        <form class="search" id="searchBar">
+          <input type="text" id="search" name="search" class="search-box" placeholder="search product">
+          <input class="search-btn" id="searchButton" type="submit" value="search">
+        </form>
+        <a href="#"><img src="../static/img/cancel.png" class="cancel-icon"  alt="" id="cancelSearch" onclick="closeCancel()"></a>
+      </div>
+    </div>
+    <ul class="links-container">
+      <li class="link-item"><a href="dish.html" class="link">Home</a></li>
+      <li class="link-item"><a href="index.html" class="link">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="cards" id="cards">
+
+  </div>
+
+  <!-- add-->
+  <button class="open-button" onclick="openForm()">Add Review</button>
+
+  <form class="form form-popup" id="myrForm">
+    <div class="subtitle">Review</div>
+    <div class="input-container ic1">
+      <input id="score" name="score" class="input" type="number" placeholder=" " oninput="if(value<1)value=1" required/>
+      <div class="cut"></div>
+      <label for="score" class="placeholder">Score</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="description" class="input" name="description" type="text" placeholder=" " required/>
+      <div class="cut"></div>
+      <label for="description" class="placeholder">Description</label>
+    </div>
+    <button type="submit" id="submit" class="submit">add/update</button>
+    <button type="button" class="submit-close" onclick="closeForm()">Close</button>
+  </form>
+
+</body>
+</html>

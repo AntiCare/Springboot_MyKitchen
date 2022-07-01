@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingredients</title>
+    <link rel="stylesheet" href="../static/ingredients.css">
+    <script defer src="../static/js/ingredients.js"></script>
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="nav">
+        <div class="nav-items">
+            <form class="search" id="searchBar">
+                <input type="text" id="search" name="search" class="search-box" placeholder="search product">
+                <input class="search-btn" id="searchButton" type="submit" value="search">
+            </form>
+            <a href="#"><img src="../static/img/cancel.png" class="cancel-icon"  alt="" id="cancelSearch" onclick="closeCancel()"></a>
+        </div>
+    </div>
+    <ul class="links-container">
+        <li class="link-item"><a href="dish.html" class="link">Home</a></li>
+        <li class="link-item"><a href="index.html" class="link">Logout</a></li>
+    </ul>
+</nav>
+
+
+<!-- product  -->
+<section class="product">
+    <h2 class="product-category">Ingredients</h2>
+</section>
+
+
+<!-- product card -->
+<div class="product-container" id="product-container">
+    <!-- products-->
+
+
+</div>
+<!-- add-->
+
+<button class="open-button" onclick="openForm()">Add Ingredient</button>
+
+    <form class="form form-popup" id="myiForm">
+        <div class="subtitle">Ingredient</div>
+        <div class="input-container ic1">
+            <input id="name" name="name" class="input" type="text" placeholder=" " required/>
+            <div class="cut"></div>
+            <label for="name" class="placeholder">Name</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="weight" class="input" name="weight" type="number" placeholder=" " oninput="if(value<1)value=1" required  />
+            <div class="cut"></div>
+            <label for="weight" class="placeholder">weight</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="description" name="description" class="input" type="text" placeholder=" " required/>
+            <div class="cut cut-short"></div>
+            <label for="description" class="placeholder">description</label>
+        </div>
+        <button type="submit" id="submit" class="submit">add/update</button>
+        <button type="button" class="submit-close" onclick="closeForm()">Close</button>
+    </form>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyKitchen</title>
+
+    <link rel="stylesheet" href="../static/index.css">
+    <script defer src="../static/js/login.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="card">
+        <div class="card-title">
+            <h3><i class="fa fa-user-circle-o" aria-hidden="true"></i> User <span id="action_title">Login</span></h3>
+        </div>
+
+        <div class="card-body">
+            <div class="card-body-top">
+                <button id="login" class="btn" name="login" onclick="login()">login</button>
+                <button id="register" class="btn" name="register" onclick="register()">register</button>
+                <div id="pointer-btn"></div>
+            </div>
+            <div class="card-body-login">
+                <form id="login-form">
+                    <input class="input-form" name="Uname" type="text" placeholder="Enter your full name" required minlength="3" maxlength="10"><br><br>
+                    <input class="input-form" name="Upassword" type="password" placeholder="Enter your password" required><br><br><br>
+                    <input class="submit-form" id="loginSubmit" type="submit" value="Login">
+                </form>
+                <form id="register-form" name="registerCheck" >
+                    <input class="input-form" name="name" type="text" placeholder="Enter your full name" required minlength="3" maxlength="10"><br><br>
+                    <input class="input-form" name="password" type="password" placeholder="Enter your password" required ><br><br>
+                    <input class="submit-form" id="registerSubmit" type="submit" value="Register" >
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+
+        <div class="footer-ul-container">
+            <ul class="info">
+                <li class="info-title">By Cheng Yang</li>
+                <li><a class="footer-link">Eml: cy0965@outlook.com</a></li>
+                <li><a  class="footer-link">Phone: +31629122391</a></li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
